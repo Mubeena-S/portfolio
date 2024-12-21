@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header with Navbar */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0; /* Fix navbar to the top */
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+    display: flex;
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    justify-items: center;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f2f2f2;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin: 0;
+    color: #333;
+}
+
+.project p {
+    margin: 5px 0 0;
+}
+#documents {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#documents h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.documents-list {
+    list-style: none;
+    padding: 0;
+}
+
+.documents-list li {
+    margin: 10px 0;
+}
+
+.documents-list a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.1rem;
+}
+
+.documents-list a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+.pdf-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* Prevents wrapping to the next row */
+    gap: 20px; /* Adds spacing between the boxes */
+    padding: 20px;
+    text-align: center;
+}
+.pdf-box {
+    width: 18%; /* Adjust the width of each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.pdf-box iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+.pdf-box .download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+.pdf-box .download-btn i {
+    margin-right: 5px;
+}
+.pdf-box p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.contact-section {
+    margin-bottom: 50px; /* Add extra space before footer */
+}
+
+/* Fix for Textarea Visibility */
+form textarea {
+    width: 100%;
+    height: 100px; /* Set a specific height for textarea */
+    padding: 10px;
+    resize: vertical; /* Allow user to resize vertically */
+}
+footer {
+    text-align: center;
+    padding: 5px 10px; /* Reduced padding */
+    background-color: #333;
+    color: white;
+    position: relative; /* Ensures it doesn't overlap */
+}
